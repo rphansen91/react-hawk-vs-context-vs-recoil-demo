@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-hawk-vs-context-vs-recoil-demo/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.f3b20d52.chunk.js",
+    "main.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.f3b20d52.chunk.js.map",
+    "runtime-main.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/runtime-main.e9407ec6.js",
+    "runtime-main.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/runtime-main.e9407ec6.js.map",
+    "static/js/2.5f9d39ce.chunk.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.5f9d39ce.chunk.js",
+    "static/js/2.5f9d39ce.chunk.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.5f9d39ce.chunk.js.map",
+    "index.html": "/react-hawk-vs-context-vs-recoil-demo/index.html",
+    "precache-manifest.5a19538866722103f7fbb407ec0507a6.js": "/react-hawk-vs-context-vs-recoil-demo/precache-manifest.5a19538866722103f7fbb407ec0507a6.js",
+    "service-worker.js": "/react-hawk-vs-context-vs-recoil-demo/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/react-hawk-vs-context-vs-recoil-demo/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.5f9d39ce.chunk.js.LICENSE.txt": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.5f9d39ce.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e9407ec6.js",
+    "static/js/2.5f9d39ce.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.f3b20d52.chunk.js"
+  ]
+}
