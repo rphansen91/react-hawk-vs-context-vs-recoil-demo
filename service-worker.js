@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-hawk-vs-context-vs-recoil-demo/precache-manifest.5a19538866722103f7fbb407ec0507a6.js"
+  "/react-hawk-vs-context-vs-recoil-demo/precache-manifest.6a8ab676d5bc38726204ef2d40212cbc.js"
 );
 
 self.addEventListener('message', (event) => {
