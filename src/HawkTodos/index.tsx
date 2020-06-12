@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { useHawkState, useHawkSetState } from "./store";
+import { useHawkState, useHawkSetState } from "react-hawk";
 import {
   todoListState,
   createTextState,

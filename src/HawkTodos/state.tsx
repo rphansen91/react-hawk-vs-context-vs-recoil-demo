@@ -1,4 +1,4 @@
-import { hawk, hawkeye, useHawkSetState, useHawkState } from './store'
+import { hawk, hawkeye, useHawkSetState, useHawkState } from 'react-hawk'
 import { ITodo, initialTodoList } from "../todoUtils";
 
 interface Async<V> {

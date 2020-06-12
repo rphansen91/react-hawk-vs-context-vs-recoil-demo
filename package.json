@@ -16,6 +16,7 @@
     "data-hoc": "^0.0.2-development",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-hawk": "^0.0.1-development",
     "react-scripts": "3.4.1",
     "recoil": "^0.0.8",
     "typescript": "~3.7.2",

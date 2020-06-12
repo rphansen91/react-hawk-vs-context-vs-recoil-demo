@@ -1,7 +1,7 @@
 import {
   useHawkState,
   useHawkSetState,
-} from "./store";
+} from "react-hawk";
 import { ITodo, wait, buildTodo } from "../todoUtils";
 import {
   todoListState,
