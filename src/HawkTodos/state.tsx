@@ -1,4 +1,4 @@
-import { hawk, hawkeye, useHawkSetState, useHawkState } from 'react-hawk'
+import { hawk, hawkeye } from "react-hawk";
 import { ITodo, initialTodoList } from "../todoUtils";
 
 interface Async<V> {
@@ -60,6 +60,7 @@ export const pagedTodoCountState = hawkeye<number>({
   get: ({ get }) => {
     const perPage = get(perPageState);
     const list = get(todoListState);
+    console.log("Get pagedTodoCountState");
     return Math.ceil(list.length / perPage);
   },
 });
@@ -70,6 +71,7 @@ export const pagedTodoListState = hawkeye<ITodo[]>({
     const page = get(pageState);
     const perPage = get(perPageState);
     const list = get(todoListState);
-    return list.slice((page - 1) * perPage, (page - 1) * perPage + perPage)
+    console.log("Get pagedTodoListState");
+    return list.slice((page - 1) * perPage, (page - 1) * perPage + perPage);
   },
 });

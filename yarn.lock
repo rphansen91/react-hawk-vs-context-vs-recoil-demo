@@ -8872,10 +8872,10 @@ react-error-overlay@^6.0.7:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-6.0.7.tgz#1dcfb459ab671d53f660a991513cb2f0a0553108"
   integrity sha512-TAv1KJFh3RhqxNvhzxj6LeT5NWklP6rDr2a0jaTfsZ5wSZWHOGeqQyejUp3xxLfPt2UpyJEcVQB/zyPcmonNFA==
 
-react-hawk@^0.0.1-development:
-  version "0.0.1-development"
-  resolved "https://registry.yarnpkg.com/react-hawk/-/react-hawk-0.0.1-development.tgz#b64e64b4b20cadb79d938330b175b9e481cbfe3b"
-  integrity sha512-1N9FCHKZQ5MDnnc57nFHnb6ydsipLGSC921LGIGLfR5Btm+I74va9YFLfFe8/kjPzr+F1m/tDA+YyEJfDruSWw==
+react-hawk@^0.0.2-development:
+  version "0.0.2-development"
+  resolved "https://registry.yarnpkg.com/react-hawk/-/react-hawk-0.0.2-development.tgz#6c60f914251c293a6fe90ee824774e0fbd99865d"
+  integrity sha512-wvBV29T6Hs+hrnhhZtYgTiqESDsshVb7WSmlY8McVqV2IGlZh3Rv7SLYyCwABHNIls/x9Bs1ub6G9dBZWZEwaQ==
   dependencies:
     querystring "^0.2.0"
     react "^16.13.1"

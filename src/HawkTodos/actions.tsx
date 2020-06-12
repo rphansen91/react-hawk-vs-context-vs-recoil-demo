@@ -1,7 +1,4 @@
-import {
-  useHawkState,
-  useHawkSetState,
-} from "react-hawk";
+import { useHawkState, useHawkSetState } from "react-hawk";
 import { ITodo, wait, buildTodo } from "../todoUtils";
 import {
   todoListState,
@@ -16,17 +13,17 @@ import {
 
 export const useSetPage = () => {
   const setPage = useHawkSetState(pageState);
-  return setPage
-}
+  return setPage;
+};
 export const useSetPerPage = () => {
   const setPerPage = useHawkSetState(perPageState);
-  return setPerPage
-}
+  return setPerPage;
+};
 
 export const useSetCreateText = () => {
   const setCreateText = useHawkSetState(createTextState);
-  return setCreateText
-}
+  return setCreateText;
+};
 
 export const useCreateTodo = () => {
   const setTodoList = useHawkSetState(todoListState);
@@ -34,18 +31,18 @@ export const useCreateTodo = () => {
   const setCreate = useHawkSetState(createState);
   const createTodo = async (text: string) => {
     try {
-      setCreate({ loading: true, data: null, error: '' })
+      setCreate({ loading: true, data: null, error: "" });
       if (!text) {
         throw new Error("Text is required");
       }
-      const newTodo = buildTodo(text)
+      const newTodo = buildTodo(text);
       await wait(1000);
-      setTodoList((list) => list.concat(newTodo));
       setCreateText("");
-      setCreate({ loading: false, data: newTodo, error: '' })
+      setCreate({ loading: false, data: newTodo, error: "" });
+      setTodoList((list) => list.concat(newTodo));
       return newTodo;
     } catch (e) {
-      setCreate({ loading: false, data: null, error: e.message })
+      setCreate({ loading: false, data: null, error: e.message });
     }
   };
   return createTodo;
@@ -53,8 +50,8 @@ export const useCreateTodo = () => {
 
 export const useSetUpdateText = () => {
   const setUpdateText = useHawkSetState(updateTextState);
-  return setUpdateText
-}
+  return setUpdateText;
+};
 
 export const useSaveTodo = () => {
   const todoList = useHawkState(todoListState);
@@ -63,24 +60,24 @@ export const useSaveTodo = () => {
   const setSave = useHawkSetState(saveState);
   const saveTodo = async (todo: ITodo | null, update: Partial<ITodo>) => {
     try {
-      setSave({ loading: true, data: null, error: '' })
-      const todoIndex = todoList.findIndex(_todo => todo === _todo)
+      setSave({ loading: true, data: null, error: "" });
+      const todoIndex = todoList.findIndex((_todo) => todo === _todo);
       if (todoIndex === -1) {
         throw new Error("Todo not found");
       }
-      if (typeof update.text === 'string' && !update.text) {
+      if (typeof update.text === "string" && !update.text) {
         throw new Error("Text is required");
       }
-      const newTodo = { ...todoList[todoIndex], ...update }
-      const newList = todoList.slice(0)
-      newList[todoIndex] = newTodo
+      const newTodo = { ...todoList[todoIndex], ...update };
+      const newList = todoList.slice(0);
+      newList[todoIndex] = newTodo;
       await wait(1000);
       setTodoList(newList);
       setUpdating(null);
-      setSave({ loading: false, data: newTodo, error: '' })
+      setSave({ loading: false, data: newTodo, error: "" });
       return newTodo;
     } catch (e) {
-      setSave({ loading: false, data: null, error: e.message })
+      setSave({ loading: false, data: null, error: e.message });
     }
   };
   return saveTodo;
@@ -116,14 +113,14 @@ export const useUpdateTodo = () => {
   const updateTodo = (todo: ITodo) => {
     setUpdateText(todo.text);
     setUpdating(todo);
-  }
-  return updateTodo
+  };
+  return updateTodo;
 };
 
 export const useCloseUpdate = () => {
   const setUpdating = useHawkSetState(updatingState);
   const closeUpdate = () => {
     setUpdating(null);
-  }
-  return closeUpdate
+  };
+  return closeUpdate;
 };
