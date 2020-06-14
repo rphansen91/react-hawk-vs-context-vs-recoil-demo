@@ -47,30 +47,30 @@ function App() {
       </Box>
       <Box p={3}>
         <Grid container spacing={3}>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <DataHocTodoList />
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <RecoilRoot>
               <RecoilTodoList />
             </RecoilRoot>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <RecoilRoot>
               <HawkTodoList />
             </RecoilRoot>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <CounterProvider>
               <ContextCounter />
             </CounterProvider>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <RecoilRoot>
               <RecoilCounter />
             </RecoilRoot>
           </Grid>
-          <Grid item md={4}>
+          <Grid item xs={12} md={4}>
             <HawkCounter />
           </Grid>
         </Grid>
