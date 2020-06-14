@@ -1,6 +1,7 @@
 import Box from "@material-ui/core/Box";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import Fab, { FabProps } from "@material-ui/core/Fab";
+import FormHelperText from "@material-ui/core/FormHelperText";
 import TextField from "@material-ui/core/TextField";
 import AddIcon from "@material-ui/icons/Add";
 import React, { FC } from "react";
@@ -41,6 +42,7 @@ export default ({
           <LoadingFab type="submit" size="small" color="primary" loading={loading}>
             <AddIcon />
           </LoadingFab>
+          {helperText ? <FormHelperText>&nbsp;</FormHelperText> : null}
         </Box>
       </Box>
     </form>
