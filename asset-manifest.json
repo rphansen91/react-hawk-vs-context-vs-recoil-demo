@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-hawk-vs-context-vs-recoil-demo/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.437e876b.chunk.js",
-    "main.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.437e876b.chunk.js.map",
+    "main.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.ef4a510d.chunk.js",
+    "main.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/main.ef4a510d.chunk.js.map",
     "runtime-main.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/runtime-main.e9407ec6.js",
     "runtime-main.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/runtime-main.e9407ec6.js.map",
-    "static/js/2.4e79cd98.chunk.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.4e79cd98.chunk.js",
-    "static/js/2.4e79cd98.chunk.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.4e79cd98.chunk.js.map",
+    "static/js/2.d9887b9b.chunk.js": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.d9887b9b.chunk.js",
+    "static/js/2.d9887b9b.chunk.js.map": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.d9887b9b.chunk.js.map",
     "index.html": "/react-hawk-vs-context-vs-recoil-demo/index.html",
-    "precache-manifest.c96685af6908b84962c48cebe14ddf79.js": "/react-hawk-vs-context-vs-recoil-demo/precache-manifest.c96685af6908b84962c48cebe14ddf79.js",
+    "precache-manifest.2b5d27c2141098e0535da25f4a34c58a.js": "/react-hawk-vs-context-vs-recoil-demo/precache-manifest.2b5d27c2141098e0535da25f4a34c58a.js",
     "service-worker.js": "/react-hawk-vs-context-vs-recoil-demo/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/react-hawk-vs-context-vs-recoil-demo/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.4e79cd98.chunk.js.LICENSE.txt": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.4e79cd98.chunk.js.LICENSE.txt"
+    "static/js/2.d9887b9b.chunk.js.LICENSE.txt": "/react-hawk-vs-context-vs-recoil-demo/static/js/2.d9887b9b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e9407ec6.js",
-    "static/js/2.4e79cd98.chunk.js",
+    "static/js/2.d9887b9b.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.437e876b.chunk.js"
+    "static/js/main.ef4a510d.chunk.js"
   ]
 }
