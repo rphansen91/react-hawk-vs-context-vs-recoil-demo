@@ -22,21 +22,14 @@ export function buildTodo (text: string): ITodo {
   }
 }
 
-export const initialTodoList = [
-  buildTodo('a'),
-  buildTodo('b'),
-  buildTodo('c'),
-  buildTodo('d'),
-  buildTodo('e'),
-  buildTodo('f'),
-  buildTodo('g'),
-  buildTodo('h'),
-  buildTodo('i'),
-  buildTodo('j'),
-  buildTodo('k'),
-  buildTodo('l'),
-  buildTodo('m'),
-  buildTodo('n'),
-  buildTodo('o'),
-  buildTodo('p'),
-]
+const alphabet = range('a'.charCodeAt(0), 'z'.charCodeAt(0)).map((code) => String.fromCharCode(code))
+const numbers = range(0, 1e6)
+export const initialTodoList = alphabet.map((text) => buildTodo(text))
+
+function range (start: number, end: number) {
+  const range = []
+  for (let i = start; i < end; i++) {
+    range.push(i)
+  }
+  return range
+}
