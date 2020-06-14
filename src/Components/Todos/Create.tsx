@@ -42,7 +42,7 @@ export default ({
           <LoadingFab type="submit" size="small" color="primary" loading={loading}>
             <AddIcon />
           </LoadingFab>
-          {helperText ? <FormHelperText>&nbsp;</FormHelperText> : null}
+          {error ? <FormHelperText>&nbsp;</FormHelperText> : null}
         </Box>
       </Box>
     </form>
