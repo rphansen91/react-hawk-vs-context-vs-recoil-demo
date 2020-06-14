@@ -1,9 +1,12 @@
 import React from "react";
 import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
+import { ContextCounter, CounterProvider } from "./ContextCounter";
 import { DataHocTodoList } from "./DataHocTodos";
 import { RecoilTodoList } from "./RecoilTodos";
+import { RecoilCounter } from "./RecoilCounter";
 import { HawkTodoList } from "./HawkTodos";
+import { HawkCounter } from "./HawkCounter";
 import { RecoilRoot } from "recoil";
 import { Typography } from "@material-ui/core";
 
@@ -56,6 +59,19 @@ function App() {
             <RecoilRoot>
               <HawkTodoList />
             </RecoilRoot>
+          </Grid>
+          <Grid item md={4}>
+            <CounterProvider>
+              <ContextCounter />
+            </CounterProvider>
+          </Grid>
+          <Grid item md={4}>
+            <RecoilRoot>
+              <RecoilCounter />
+            </RecoilRoot>
+          </Grid>
+          <Grid item md={4}>
+            <HawkCounter />
           </Grid>
         </Grid>
       </Box>

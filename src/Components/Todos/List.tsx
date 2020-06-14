@@ -19,7 +19,7 @@ export default ({
   footer
 }: ITodoListProps) => {
   return (
-    <Paper>
+    <Paper style={{ width: '100%' }}>
       <CardHeader
         title={title}
         action={action}
